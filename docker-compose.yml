@@ -16,7 +16,7 @@ services:
             context: ./nginx
         ports: 
             - '3050:80'
-        command: ["nginx", "-c", "/etc/nginx/conf.d/default.conf", "-t"]
+        
     api:
         depends_on:
             - postgres
